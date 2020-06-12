@@ -21,6 +21,7 @@ with open("index.html", 'r') as file:
     classes_total_sum = 0
 
     for i in values:
+
         actual_values = i.find_all("td")
         lines_missed = actual_values[3].contents[0]
         lines_total = actual_values[4].contents[0]
